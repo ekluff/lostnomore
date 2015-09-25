@@ -1,7 +1,7 @@
 {
-  "name": "lostandfound",
+  "name": "lostnomore",
   "version": "0.0.0",
-  "description": "Small description for lostandfound goes here",
+  "description": "Small description for lostnomore goes here",
   "private": true,
   "directories": {
     "doc": "doc",
@@ -20,7 +20,6 @@
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.1.2",
-    "ember-bootstrap": "0.4.0",
     "ember-cli": "1.13.8",
     "ember-cli-app-version": "0.5.0",
     "ember-cli-babel": "^5.1.3",
@@ -36,7 +35,6 @@
     "ember-cli-uglify": "^1.2.0",
     "ember-data": "1.13.8",
     "ember-disable-proxy-controllers": "^1.0.0",
-    "ember-export-application-global": "^1.0.3",
-    "emberfire": "1.5.0"
+    "ember-export-application-global": "^1.0.3"
   }
 }
