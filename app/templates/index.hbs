@@ -1,1 +1,16 @@
-{{outlet}}
+<div class="jumbotron-overlay">
+  <div class="jumbotron text-center">
+    <h1>LOST NO MORE</h1>
+    <p>
+      a community lost and found board
+    </p>
+  </div>
+</div>
+
+<div class="container post-container">
+  {{#each model as |post|}}
+    {{#link-to 'post' post.id}}
+      {{post-tile post=post}}
+    {{/link-to}}
+  {{/each}}
+</div>

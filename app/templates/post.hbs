@@ -1,1 +1,30 @@
-{{outlet}}
+<div class="container post-container">
+  <div class="row">
+    <div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2 text-center">
+
+      <h4>
+        {{model.title}}
+      </h4>
+
+      <p>
+        {{model.body}}
+      </p>
+
+      <p>
+        posted by {{model.author}}, {{model.location}}
+      </p>
+
+    </div>
+  </div>
+
+  <div class="row">
+    {{new-comment saveComment="saveComment" post=model}}
+  </div>
+
+  <div class="row">
+    {{#each model.comments as |comment|}}
+      {{comment-tile comment=comment}}
+    {{/each}}
+  </div>
+
+</div>
