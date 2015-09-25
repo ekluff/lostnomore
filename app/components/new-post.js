@@ -8,9 +8,10 @@ export default Ember.Component.extend({
     },
     save() {
       var params = {
+        author: this.get('author'),
+        location: this.get('location'),
         title: this.get('title'),
-        image: this.get('image'),
-        caption: this.get('caption')
+        body: this.get('body')
       };
       this.set('addNewPost', false),
       this.sendAction('save', params);

@@ -8,6 +8,8 @@
 </div>
 
 <div class="container post-container">
+  {{new-post save="save"}}
+
   {{#each model as |post|}}
     {{#link-to 'post' post.id}}
       {{post-tile post=post}}

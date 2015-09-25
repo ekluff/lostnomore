@@ -4,25 +4,21 @@
       <div class="container">
         <form id="new-post">
           <div class="form-group">
-            <label for="author" class="form-control">Your name</label>
-            {{input value=author id="author" class="form-control"}}
+            {{input value=author id="author" class="form-control" placeholder="your name"}}
           </div>
           <div class="form-group">
-            <label for="location" class="form-control">Location</label>
-            {{input value=location id="location" class="form-control"}}
+            {{input value=location id="location" class="form-control" placeholder="your location"}}
           </div>
           <div class="form-group">
-            <label for="title" class="form-control">Title</label>
-            {{input value=title id="title" class="form-control"}}
+            {{input value=title id="title" class="form-control" placeholder="post title"}}
           </div>
           <div class="form-group">
-            <label for="body" class="form-control">Body</label>
-            {{textarea form="new-post" value=body id="body" class="form-control"}}
+            {{textarea form="new-post" rows="10" value=body id="body" class="form-control"  placeholder="post body"}}
           </div>
-          <button {{action 'save'}} class="btn btn-primary form-control">Save</button>
+          <button {{action 'save'}} class="btn btn-primary">Save</button>
         </form>
       </div>
   {{else}}
-      <button class="btn" {{action 'postFormShow'}} class="btn btn-primary">New Post</button>
+      <button class="btn btn-primary" {{action 'postFormShow'}}>New Post</button>
   {{/if}}
 </div>
