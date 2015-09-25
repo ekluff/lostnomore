@@ -13,13 +13,24 @@
       <p>
         posted by {{model.author}}, {{model.location}}
       </p>
-
     </div>
   </div>
+
+  <div class="row text-center">
+    <button class="btn btn-danger" {{action 'destroyPost' model}}>Delete Post</button>
+  </div>
+  <br>
+  <div class="row text-center">
+    {{update-post post=model updatePost="updatePost"}}
+  </div>
+
+<div class="divider"></div>
 
   <div class="row">
     {{new-comment saveComment="saveComment" post=model}}
   </div>
+
+  <div class="divider"></div>
 
   <div class="row">
     {{#each model.comments as |comment|}}
